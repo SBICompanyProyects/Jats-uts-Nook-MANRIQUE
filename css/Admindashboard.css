@@ -1,0 +1,191 @@
+/*//////////////////////////////////// VENTANA PRINCIPAL DEL ADMINISTRADOR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+body {
+    font-size: .875rem;
+    background-image: url('../recursos/IMG/FondoFinal.jpeg');
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+  right: 0;
+  */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 48px 0 0;
+    /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #727272;
+}
+
+.sidebar .nav-link.active {
+    color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+
+.navbar {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.MAIN_ADMIN {
+    background-color: #f9e6f9;
+}
+
+
+/*//////////////////////////////////// VENTANA ADMINISTRACION PRODUCTOS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.Cont__NewProduct {
+    background-color: #f9e6f9;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    ;
+}
+
+.FormularioNewProduc {
+    background-color: #fcd4fc;
+    max-width: 500px;
+    width: 95%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contenedorImagen {
+    background-color: #fcd4fc;
+    max-width: 500px;
+    width: 95%;
+    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.TitleFormRegistro {
+    max-width: 480px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.SelectsForm_Register {
+    max-width: 220px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.Inputs1 {
+    max-width: 465px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Inputs2 {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.SeccionesRegistro {
+    max-width: 200px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin: auto;
+}
+
+.Input__Color {
+    max-width: 120px;
+    width: 60%;
+}
+
+.Tabla__EditProd {
+    background-color: #f9e6f9;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#imagenPreview {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+}
